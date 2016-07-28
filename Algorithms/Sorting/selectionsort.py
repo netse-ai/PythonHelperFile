@@ -1,14 +1,14 @@
 def selectionSort(alist):
-    for index in range(len(alist)-1, 0, -1):
+    for i in range(len(alist)-1, 0, -1):
         positionOfMax = 0
-        for location in range(1, index+1):
-            if alist[location] > alist[positionOfMax]:
-                positionOfMax = location
+        for j in range(1, i+1):
+            if alist[j] > alist[positionOfMax]:
+                positionOfMax = j
 
-        temp = alist[index]
-        alist[index] = alist[positionOfMax]
+        temp = alist[i]
+        alist[i] = alist[positionOfMax]
         alist[positionOfMax] = temp
-    print alist
 
-testlist = [1, 4, 2, 5, 3, 6, 7, 9, 8]
-selectionSort(testlist)
+lst = [4, 1, 0, 22, 34, 21]
+selectionSort(lst)
+print lst
