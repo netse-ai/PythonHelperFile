@@ -2,17 +2,17 @@ import time
 import random
 from functools import wraps
 
-radix = random.sample(range(100000),100000)
+radix = random.sample(range(10000),10000)
 
-adpmerge = random.sample(range(100000),100000)
+adpmerge = random.sample(range(10000),10000)
 
-merge = random.sample(range(100000),100000)
+merge = random.sample(range(10000),10000)
 
-insertion = random.sample(range(100000),100000)
+insertion = random.sample(range(100),100)
 
-selection = random.sample(range(100000),100000)
+selection = random.sample(range(100),100)
 
-bubble = random.sample(range(100000),100000)
+bubble = random.sample(range(100),100)
 
 
 def fn_timer(function):
